@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Funds - BTC Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #111111;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            text-align: center;
+            color: #e91e63;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .notice {
+            background-color: #f44336;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .address {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            word-wrap: break-word;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #d81b60;
+        }
+        .copy-btn {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #9c27b0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .copy-btn:hover {
+            background-color: #8e24aa;
+        }
+        .payment-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 10px;
+        }
+        .timer {
+            font-size: 24px;
+            color: #e91e63;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Funds - BTC Payment</h2>
+        
+        <div class="notice">
+            Minimum Payment: $10
+            <br>
+            <strong>Note:</strong> After payment, we will add your funds within 5 minutes.
+        </div>
+
+        <div class="content">
+            <p>Send payment to the following Bitcoin address:</p>
+            <div class="address" id="btc-address">
+                1ANYq1MJ9CK7r3dD66ZTRJD1KqvfZnkw3Q
+            </div>
+            <button class="copy-btn" onclick="copyAddress()">Copy Address</button>
+        </div>
+        
+        <button class="btn" onclick="redirectToPaymentPage()">Proceed with Payment</button>
+    </div>
+
+    <script>
+        function copyAddress() {
+            const addressText = document.getElementById("btc-address").textContent;
+            navigator.clipboard.writeText(addressText).then(() => {
+                alert("BTC Address copied to clipboard!");
+            });
+        }
+
+        function redirectToPaymentPage() {
+            window.location.href = "paymentPage.html";
+        }
+    </script>
+</body>
+</html>

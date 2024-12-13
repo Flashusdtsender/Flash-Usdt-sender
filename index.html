@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnderGround Cards Market</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ff4081;
+        }
+
+        nav {
+            background: #272727;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff4081;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: #1f1f1f;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #ff4081;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #1f1f1f;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background: #ff4081;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #e03570;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UnderGround Cards Market</h1>
+    </header>
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#balance">User Balance</a>
+        <a href="fund.html">Add Funds</a>
+        <a href="CardsPage.html">Cards List</a>
+        <a href="CardsPage.html">Cart System</a>
+    </nav>
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <p>Welcome to your dashboard! Here you can manage your account and view your activity.</p>
+    </section>
+    <section id="balance">
+        <h2>User Balance</h2>
+        <p>Your current balance is: <strong>$0.00</strong></p>
+    </section>
+    <section id="add-funds">
+        <h2>Add Funds</h2>
+        <p>Add BTC to your account to start purchasing cards.</p>
+        <a href="fund.html" class="btn">Add Funds</a>
+    </section>
+    <section id="cards">
+        <h2>Cards List</h2>
+        <p>Browse through the available cards and select the ones you need.</p>
+    </section>
+    <section id="cart">
+        <h2>Cart System</h2>
+        <p>Your cart is currently empty. Add items to your cart to proceed with checkout.</p>
+    </section>
+    <footer>
+        <p>UnderGround Cards Market &copy; 2024</p>
+    </footer>
+</body>
+</html>
